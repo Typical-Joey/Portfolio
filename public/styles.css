@@ -1,4 +1,49 @@
 body {
-    background-color: #164A41;
-    color: #FFFFFF;
+  background-image: linear-gradient(#0f0f0f, #161616, #0f0f0f);
+  /* background-color: #0f0f0f; */
+  color: #efe8d7;
+  margin: auto 5%;
+  text-align: center;
+}
+
+.hello {
+  margin-top: 15rem;
+  height: 100vh;
+}
+
+hr {
+  border-top: 3px solid #efe8d7;
+}
+
+.project {
+  text-align: center;
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  background-color: #696969;
+  padding: 50px;
+  border: black solid 3px;
+  border-radius: 5%;
+  margin-right: 3rem;
+}
+
+.test-sidebar {
+  background-color: #efe8d7;
+  position: absolute;
+  left: 0;
+  margin-right: 20px;
+  width: 100px;
+  height: 100vh;
+}
+
+.contact {
+  padding-bottom: 5rem;
+}
+
+.icons {
+  margin-right: 1rem;
+}
+
+.margin-top {
+  margin-top: 3rem;
 }

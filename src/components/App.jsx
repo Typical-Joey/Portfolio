@@ -1,9 +1,15 @@
 import React from "react";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Test from "./Test";
+import Hello from "./Hello";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Hello />
+      <Projects />
+      <Contact />
     </div>
   );
 }
