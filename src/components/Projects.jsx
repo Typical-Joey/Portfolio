@@ -3,7 +3,7 @@ import Project from "./Project";
 
 export default function Projects() {
   return (
-    <div id="Projects">
+    <div id="Projects" className="projects container-fluid">
       <h1>Projects</h1>
       <hr />
       <Project

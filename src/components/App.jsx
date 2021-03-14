@@ -1,13 +1,14 @@
 import React from "react";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Test from "./Test";
-import Hello from "./Hello";
+import Greeting from "./Greeting";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Hello />
+      <Navbar />
+      <Greeting />
       <Projects />
       <Contact />
     </div>
