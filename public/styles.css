@@ -11,9 +11,9 @@ hr {
 
 .navbar {
   background-color: #efe8d7;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  width: 99.11vw; */
+  width: 99.11vw;
 }
 
 .greeting {

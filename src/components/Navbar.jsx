@@ -8,15 +8,15 @@ export default function Navbar() {
           className="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
+              <a className="nav-link" aria-current="page" href="#Projects">
+                Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
+              <a className="nav-link" href="#Contact">
+                Contact Me
               </a>
             </li>
           </ul>
