@@ -2,12 +2,12 @@ import React from "react";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Greeting from "./Greeting";
-import Navbar from "./Navbar";
+import SideIcons from "./SideIcons";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <SideIcons />
       <Greeting />
       <Projects />
       <Contact />
