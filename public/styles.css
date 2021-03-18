@@ -48,6 +48,10 @@ hr {
   border-radius: 10px;
 }
 
+.project:hover {
+  cursor: pointer;
+}
+
 .project-button {
   display: inline-block;
   position: absolute;
@@ -90,10 +94,15 @@ hr {
 }
 
 .side-icons {
+  display: block;
   position: fixed;
-  color: #f5ba13;
-  width: 20px;
-  height: 100px;
+  color: #1167b1;
+  width: 40px;
   left: 0;
   margin-top: 35vh;
+  z-index: 10;
+}
+
+.icon {
+  margin-bottom: 1rem;
 }
