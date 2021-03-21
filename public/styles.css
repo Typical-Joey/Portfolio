@@ -11,13 +11,7 @@ body {
 
 hr {
   border-top: 3px solid #f5f5f5;
-}
-
-.navbar {
-  background-color: #f5f5f5;
-  position: fixed;
-  top: 0;
-  width: 99.11vw;
+  mix-blend-mode: exclusion;
 }
 
 .greeting {
@@ -35,10 +29,11 @@ hr {
 .projects {
   background-color: #f5f5f5;
   color: #0f0f0f;
-  padding: 10rem 0;
+  padding: 8rem 0;
 }
 
 .project {
+  margin-top: 5rem;
   text-align: center;
   display: inline-block;
   width: 350px;
@@ -100,9 +95,56 @@ hr {
   width: 40px;
   left: 0;
   margin-top: 35vh;
-  z-index: 10;
+  z-index: 5;
 }
 
 .icon {
   margin-bottom: 1rem;
+}
+
+.modal-background {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.modal {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  position: fixed;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.modal-img {
+  width: 60%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background: #0f0f0f;
+}
+
+.modal-content {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  /* justify-content: left; */
+  align-items: flex-start;
+  line-height: 1.8;
+  color: #0f0f0f;
+}
+
+.test {
+  color: #1167b1;
+  z-index: 1000;
 }

@@ -8,26 +8,26 @@ export default function Projects() {
       <hr />
       <div className="container-fluid">
         <div className="row">
-          <div class="col">
+          <div className="col">
             <Project
               className="keeper"
               title="K E E P E R"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
             />
           </div>
-          <div class="col">
+          <div className="col">
             <Project
               title="Secrets"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
             />
           </div>
-          <div class="col">
+          <div className="col">
             <Project
               title="Blog"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
             />
           </div>
-          <div class="col">
+          <div className="col">
             <Project
               title="Tindog"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
