@@ -14,9 +14,6 @@ export default function SideIcons() {
         <GitHubIcon fontSize="large" className="icon" />
       </a>
       <a href="">
-        <EmailIcon fontSize="large" className="icon" />
-      </a>
-      <a href="">
         <DescriptionIcon fontSize="large" className="icon" />
       </a>
     </div>

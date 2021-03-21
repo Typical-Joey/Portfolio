@@ -23,6 +23,8 @@ textarea {
   resize: none;
 }
 
+/* Greeting --------------------------------------------------------------------------------- */
+
 .greeting {
   background-image: linear-gradient(to bottom right, #f5f5f5 50%, #0f0f0f 50%);
   margin-bottom: 3rem;
@@ -34,6 +36,8 @@ textarea {
   padding-top: 20rem;
   mix-blend-mode: exclusion;
 }
+
+/* Projects ---------------------------------------------------------------------------------- */
 
 .projects {
   background-color: #f5f5f5;
@@ -67,17 +71,13 @@ textarea {
   right: 50px;
 }
 
-.keeper {
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-  background-color: #f5ba13;
-  color: #fff;
-  padding-top: 50%;
-}
+/* Contact ------------------------------------------------------------------- */
 
 .contact {
+  display: block;
+  text-align: left;
   padding-bottom: 5rem;
+  margin: auto 20rem;
 }
 
 .icons {
@@ -106,6 +106,8 @@ textarea {
 .icon {
   margin-bottom: 1rem;
 }
+
+/* Modal ---------------------------------------------------------------------------*/
 
 .modal-background {
   background: rgba(0, 0, 0, 0.8);
