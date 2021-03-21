@@ -9,16 +9,19 @@ export default function Project(props) {
   }
 
   return (
-    <div className="card project" onClick={handleModal}>
-      <div className={props.className}>
-        <h1>{props.title}</h1>
-      </div>
+    <div className="card project">
+      <div className={props.className}></div>
       <ProjectModal
         show={showModal}
         setShowModal={setShowModal}
         title={props.title}
         body={props.body}
+        hide={handleModal}
+        info={props.info}
       />
+      <button className="btn btn-outline-dark" onClick={handleModal}>
+        See Project
+      </button>
     </div>
   );
 }
