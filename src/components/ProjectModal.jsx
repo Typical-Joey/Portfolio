@@ -10,13 +10,9 @@ export default function ProjectModal(props) {
     <>
       <div className="modal-background" onClick={props.hide} />
       <div className="modal">
-        <img
-          className="modal-img"
-          src={require("./images/test.png")}
-          alt="app-img"
-        />
+        <img className="modal-img" src={props.img} alt="app-img" />
         <div className="modal-content">
-          <CloseIcon className="modal-icon" onClick={props.hide}/>
+          <CloseIcon className="modal-icon" onClick={props.hide} />
 
           <h6>Project:</h6>
           <h1>{props.title}</h1>

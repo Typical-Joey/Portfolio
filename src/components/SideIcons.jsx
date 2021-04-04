@@ -2,6 +2,7 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import DescriptionIcon from "@material-ui/icons/Description";
+import pdf from "./josephCapocciResume.PDF";
 
 export default function SideIcons() {
   return (
@@ -12,7 +13,7 @@ export default function SideIcons() {
       <a href="https://github.com/Typical-Joey/">
         <GitHubIcon fontSize="large" className="icon" />
       </a>
-      <a href="">
+      <a href={pdf}>
         <DescriptionIcon fontSize="large" className="icon" />
       </a>
     </div>

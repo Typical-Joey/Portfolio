@@ -1,5 +1,9 @@
 import React from "react";
 import Project from "./Project";
+import KeeperIMG from "./images/Keeper.png";
+import SecretIMG from "./images/Secret.png";
+import BlogIMG from "./images/Blog.png";
+import TindogIMG from "./images/Tindog.png";
 
 export default function Projects() {
   return (
@@ -10,33 +14,38 @@ export default function Projects() {
         <div className="row">
           <div className="col">
             <Project
-              className="keeper"
               title="Keeper"
-              info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum."
+              info="Made using react, mongoDB, Nodejs, and express. Keeper is a task managing application with full login and register functionality as well as user specific saved note."
+              img={KeeperIMG}
             />
           </div>
           <div className="col">
             <Project
               title="Secrets"
-              info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              info="Made using ejs, mongoDB, Nodejs, express, and
+              passport. Secret is an application that allows users
+              to upload secrets to share with everyone, this
+              project was made to practice user authorization
+              and authentication using passport, it includes
+              password hashing as well as oAuth login."
+              img={SecretIMG}
             />
           </div>
           <div className="col">
             <Project
               title="Blog"
-              info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              info="Made using ejs, NodeJS, and express. My blog
+              application was the first time I did routing using
+              express."
+              img={BlogIMG}
             />
           </div>
           <div className="col">
             <Project
               title="Tindog"
-              info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              info="Made using css, and bootstrap. This was one of
+              my first websites, made just using the basics"
+              img={TindogIMG}
             />
           </div>
         </div>

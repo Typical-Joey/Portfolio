@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
@@ -10,14 +11,16 @@ export default function Project(props) {
 
   return (
     <div className="card project">
-      <div className={props.className}></div>
+      <div className="project-img">
+        <img src={props.img} alt="App Image" />
+      </div>
       <ProjectModal
         show={showModal}
-        setShowModal={setShowModal}
         title={props.title}
         body={props.body}
         hide={handleModal}
         info={props.info}
+        img={props.img}
       />
       <button className="btn btn-outline-dark" onClick={handleModal}>
         See Project

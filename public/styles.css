@@ -56,6 +56,16 @@ textarea {
   border-radius: 10px;
 }
 
+.project button {
+  position: absolute;
+  bottom: 0;
+  right: 33%;
+}
+
+.project-img {
+  border-radius: 50%;
+}
+
 .project-button {
   display: inline-block;
   position: absolute;
@@ -98,8 +108,11 @@ textarea {
 
 .icon {
   color: #f5f5f5;
-
   margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #717761;
 }
 
 /* Modal ---------------------------------------------------------------------------*/
