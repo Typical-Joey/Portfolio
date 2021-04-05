@@ -17,6 +17,7 @@ export default function Projects() {
               title="Keeper"
               info="Made using react, mongoDB, Nodejs, and express. Keeper is a task managing application with full login and register functionality as well as user specific saved note."
               img={KeeperIMG}
+              code="https://github.com/Typical-Joey/Keeper-App"
             />
           </div>
           <div className="col">
@@ -29,6 +30,7 @@ export default function Projects() {
               and authentication using passport, it includes
               password hashing as well as oAuth login."
               img={SecretIMG}
+              code="https://github.com/Typical-Joey/secrets"
             />
           </div>
           <div className="col">
@@ -38,6 +40,7 @@ export default function Projects() {
               application was the first time I did routing using
               express."
               img={BlogIMG}
+              code="https://github.com/Typical-Joey/blog"
             />
           </div>
           <div className="col">
@@ -46,6 +49,7 @@ export default function Projects() {
               info="Made using css, and bootstrap. This was one of
               my first websites, made just using the basics"
               img={TindogIMG}
+              code="https://github.com/Typical-Joey/Tindog"
             />
           </div>
         </div>

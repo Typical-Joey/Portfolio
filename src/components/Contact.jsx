@@ -29,7 +29,7 @@ export default function Contact() {
       <h1>Contact Me</h1>
       <hr />
       <form onSubmit={sendEmail} className="contact">
-        <div className="mb-3">
+        <div className="form-group mb-3">
           <label htmlFor="email" className="form-label">
             Email
           </label>
@@ -41,7 +41,7 @@ export default function Contact() {
             placeholder="Email"
           />
         </div>
-        <div className="mb-3">
+        <div className="form-group mb-3">
           <label htmlFor="name" className="form-label">
             Name
           </label>
@@ -53,7 +53,7 @@ export default function Contact() {
             placeholder="Name"
           />
         </div>
-        <div className="mb-3">
+        <div className="form-group mb-3">
           <label htmlFor="message" className="form-label">
             Message
           </label>
@@ -64,7 +64,7 @@ export default function Contact() {
             cols="30"
             rows="10"
             placeholder="Message"
-          ></textarea>
+          />
         </div>
         <button type="submit" className="btn btn-outline-light">
           Send Email

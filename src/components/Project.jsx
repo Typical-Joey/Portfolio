@@ -21,6 +21,7 @@ export default function Project(props) {
         hide={handleModal}
         info={props.info}
         img={props.img}
+        code={props.code}
       />
       <button className="btn btn-outline-dark" onClick={handleModal}>
         See Project
