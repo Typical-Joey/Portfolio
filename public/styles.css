@@ -63,14 +63,7 @@ textarea {
 }
 
 .project-img {
-  border-radius: 50%;
-}
-
-.project-button {
-  display: inline-block;
-  position: absolute;
-  bottom: 3%;
-  width: 90px;
+  border-radius: 5px;
 }
 
 .project-button-left {
@@ -79,44 +72,6 @@ textarea {
 
 .project-button-right {
   right: 50px;
-}
-
-/* Contact --------------------------------------------------------------------------------- */
-
-.contact {
-  display: block;
-  text-align: left;
-  padding-bottom: 5rem;
-  margin: auto 20rem;
-}
-
-.margin-top {
-  margin-top: 3rem;
-}
-
-.form-group {
-  width: 100%;
-}
-
-/* Icons --------------------------------------------------------------------------------- */
-
-.side-icons {
-  display: block;
-  position: fixed;
-  width: 40px;
-  left: 0;
-  margin-top: 35vh;
-  z-index: 5;
-  mix-blend-mode: exclusion;
-}
-
-.icon {
-  color: #f5f5f5;
-  margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #717761;
 }
 
 /* Modal --------------------------------------------------------------------------------- */
@@ -178,4 +133,42 @@ textarea {
 .modal-buttons a {
   margin-top: 1rem;
   margin-right: 1rem;
+}
+
+/* Contact --------------------------------------------------------------------------------- */
+
+.contact {
+  display: block;
+  text-align: left;
+  padding-bottom: 5rem;
+  margin: auto 20rem;
+}
+
+.margin-top {
+  margin-top: 3rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+/* Icons --------------------------------------------------------------------------------- */
+
+.side-icons {
+  display: block;
+  position: fixed;
+  width: 40px;
+  left: 0;
+  margin-top: 35vh;
+  z-index: 5;
+  mix-blend-mode: exclusion;
+}
+
+.icon {
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #717761;
 }

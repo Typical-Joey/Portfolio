@@ -25,11 +25,11 @@ export default function Contact() {
   }
 
   return (
-    <div id="Contact" className="margin-top">
+    <div id="Contact" className="margin-top container-fluid">
       <h1>Contact Me</h1>
       <hr />
       <form onSubmit={sendEmail} className="contact">
-        <div className="form-group mb-3">
+        <div className="form-group row">
           <label htmlFor="email" className="form-label">
             Email
           </label>
@@ -41,7 +41,7 @@ export default function Contact() {
             placeholder="Email"
           />
         </div>
-        <div className="form-group mb-3">
+        <div className="form-group row">
           <label htmlFor="name" className="form-label">
             Name
           </label>
@@ -53,7 +53,7 @@ export default function Contact() {
             placeholder="Name"
           />
         </div>
-        <div className="form-group mb-3">
+        <div className="form-group row">
           <label htmlFor="message" className="form-label">
             Message
           </label>

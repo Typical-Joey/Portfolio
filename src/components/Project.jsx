@@ -11,9 +11,7 @@ export default function Project(props) {
 
   return (
     <div className="card project">
-      <div className="project-img">
-        <img src={props.img} alt="App Image" />
-      </div>
+      <img src={props.img} alt="App Image" className="project-img" />
       <ProjectModal
         show={showModal}
         title={props.title}
