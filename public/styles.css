@@ -111,7 +111,6 @@ textarea {
 .modal-img {
   width: 60%;
   height: 100%;
-  /* border-radius: 10px 0 0 10px; */
   background: #0f0f0f;
 }
 
@@ -150,6 +149,14 @@ textarea {
 
 .form-group {
   width: 100%;
+}
+
+.error {
+  color: #de5246;
+}
+
+.success {
+  color: #008000;
 }
 
 /* Icons --------------------------------------------------------------------------------- */
