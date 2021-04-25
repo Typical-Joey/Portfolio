@@ -125,6 +125,12 @@ textarea {
   padding: 2rem;
 }
 
+.modal-content textarea {
+  border: 0 solid #a0a0a0;
+  border-radius: 2%;
+  box-shadow: 0 0 10px #dadada;
+}
+
 .modal-buttons {
   display: inline-block;
 }
