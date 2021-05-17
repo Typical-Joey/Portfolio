@@ -18,6 +18,7 @@ export default function Projects() {
               info="Made using react, mongoDB, Nodejs, and express. Keeper is a task managing application with full login and register functionality as well as user specific saved note."
               img={KeeperIMG}
               code="https://github.com/Typical-Joey/Keeper-App"
+              url=""
             />
           </div>
           <div className="col">
@@ -31,6 +32,7 @@ export default function Projects() {
               password hashing as well as oAuth login."
               img={SecretIMG}
               code="https://github.com/Typical-Joey/secrets"
+              url="https://damp-depths-86371.herokuapp.com/"
             />
           </div>
           <div className="col">
@@ -41,6 +43,7 @@ export default function Projects() {
               express."
               img={BlogIMG}
               code="https://github.com/Typical-Joey/blog"
+              url="https://radiant-beyond-31546.herokuapp.com/"
             />
           </div>
           <div className="col">
@@ -50,6 +53,7 @@ export default function Projects() {
               my first websites, made just using the basics"
               img={TindogIMG}
               code="https://github.com/Typical-Joey/Tindog"
+              url="https://typical-joey.github.io/Tindog/"
             />
           </div>
         </div>

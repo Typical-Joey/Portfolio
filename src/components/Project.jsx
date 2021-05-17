@@ -20,6 +20,7 @@ export default function Project(props) {
         info={props.info}
         img={props.img}
         code={props.code}
+        url={props.url}
       />
       <button className="btn btn-outline-dark" onClick={handleModal}>
         See Project

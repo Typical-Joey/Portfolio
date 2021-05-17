@@ -24,7 +24,7 @@ export default function ProjectModal(props) {
             <a className="btn btn-outline-dark" href={props.code}>
               <CodeIcon /> Code
             </a>
-            <a className="btn btn-outline-dark" href={props.demo}>
+            <a className="btn btn-outline-dark" href={props.url}>
               <VisibilityIcon /> Demo
             </a>
           </div>
