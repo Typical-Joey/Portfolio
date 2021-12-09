@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import CloseIcon from "@material-ui/icons/Close";
 import VisibilityIcon from "@material-ui/icons/Visibility";
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import CodeIcon from "@material-ui/icons/Code";
 
 export default function ProjectModal(props) {
@@ -25,7 +26,7 @@ export default function ProjectModal(props) {
               <CodeIcon /> Code
             </a>
             <a className="btn btn-outline-dark" href={props.url}>
-              <VisibilityIcon /> Demo
+              {props.url ? (<VisibilityIcon />) : (<VisibilityOffIcon />)} Demo
             </a>
           </div>
         </div>
