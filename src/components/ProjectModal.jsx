@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import CloseIcon from "@material-ui/icons/Close";
-import VisibilityIcon from "@material-ui/icons/Visibility";
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import CodeIcon from "@material-ui/icons/Code";
+import CloseIcon from "@material-ui/icons/Close";
+import { DemoActive, DemoInactive } from "./DemoButtons";
 
 export default function ProjectModal(props) {
   if (!props.show) return null;
@@ -21,13 +20,12 @@ export default function ProjectModal(props) {
           <textarea readOnly="true" cols="24" rows="10" wrap="hard">
             {props.info}
           </textarea>
+
           <div className="modal-buttons">
             <a className="btn btn-outline-dark" href={props.code}>
               <CodeIcon /> Code
             </a>
-            <a className="btn btn-outline-dark" href={props.url}>
-              {props.url ? (<VisibilityIcon />) : (<VisibilityOffIcon />)} Demo
-            </a>
+            {props.url ? (<DemoActive url={props.url} />) : (<DemoInactive url={props.url}/>)}
           </div>
         </div>
       </div>
