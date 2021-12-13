@@ -18,7 +18,7 @@ export default function ProjectModal(props) {
           <h6>Project:</h6>
           <h1>{props.title}</h1>
           <h6>About:</h6>
-          <textarea readOnly="true" cols="30" rows="10">
+          <textarea readOnly="true" cols="24" rows="10" wrap="hard">
             {props.info}
           </textarea>
           <div className="modal-buttons">
