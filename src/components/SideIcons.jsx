@@ -2,7 +2,7 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import DescriptionIcon from "@material-ui/icons/Description";
-import pdf from "./josephCapocciResume.pdf";
+import pdf from "./josephCapocciResume.PDF";
 
 export default function SideIcons() {
   return (
