@@ -45,7 +45,6 @@ export default function Contact() {
     <div id="Contact" className="margin-top container">
       <div className="row">
         <h1 className="col-lg-12">Contact Me</h1>
-        <hr className="col" />
       </div>
       <h2 className={msgColor}>{response}</h2>
       <form onSubmit={sendEmail} className="contact">
