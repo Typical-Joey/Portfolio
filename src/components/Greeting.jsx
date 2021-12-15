@@ -1,16 +1,14 @@
 import React from "react";
-
+import { Greeting, GreetingText } from "./styles/greetings.styles";
 
 
 export default function Hello() {
   return (
-    <div id="Greeting" className="greeting">
-      <div className="greeting-text">
+    <Greeting>
+      <GreetingText>
         <h1>Hi, I'm Joseph</h1>
-        <h2>
-          A Full-Stack Software Engineer
-        </h2>
-      </div>
-    </div>
+        <h2>A Full-Stack Software Engineer</h2>
+      </GreetingText>
+    </Greeting>
   );
 }
