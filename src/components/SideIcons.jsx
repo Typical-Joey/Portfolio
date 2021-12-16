@@ -3,19 +3,20 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import DescriptionIcon from "@material-ui/icons/Description";
 import pdf from "./josephCapocciResume.PDF";
+import { IconContainer, Icon} from './styles/sideIcons.styles';
 
 export default function SideIcons() {
   return (
-    <div id="Side-Icons" className="side-icons">
+    <IconContainer id="Side-Icons" className="side-icons">
       <a href="https://www.linkedin.com/in/joseph-capocci-01bb10199/">
-        <LinkedInIcon fontSize="large" className="icon" />
+        <Icon><LinkedInIcon fontSize="large"/></Icon>
       </a>
       <a href="https://github.com/Typical-Joey/">
-        <GitHubIcon fontSize="large" className="icon" />
+        <Icon><GitHubIcon fontSize="large"/></Icon>
       </a>
       <a href={pdf}>
-        <DescriptionIcon fontSize="large" className="icon" />
+        <Icon><DescriptionIcon fontSize="large"/></Icon>
       </a>
-    </div>
+    </IconContainer>
   );
 }
