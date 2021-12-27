@@ -1,18 +1,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { ContactForm, ContactContainer, ErrorColor, SuccessColor } from './styles/contact.styles';
 require("dotenv").config();
 
 export default function Contact() {
   const [response, setResponse] = useState();
-  const [msgColor, setMsgColor] = useState();
-
-  function handleResponse(msg) {
-    setResponse(msg);
-  }
-
-  function handleColor(color) {
-    setMsgColor(color);
-  }
 
   function sendEmail(e) {
     e.preventDefault();
@@ -27,27 +19,30 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          handleResponse("Email Sent!");
-          handleColor("success");
+          const successResponse = (<SuccessColor> Email Sent! </SuccessColor>);
+          setResponse(successResponse);
         },
         (error) => {
           console.log(error.text);
-          handleResponse(
-            "Sorry! Looks like something went wrong. Please try again."
-          );
-          handleColor("error");
+          const errorResponse = (
+          <ErrorColor>  
+            Sorry! Looks like something went wrong. Please try again. 
+          </ErrorColor>);
+          setResponse(errorResponse);
         }
       );
     e.target.reset();
   }
 
   return (
-    <div id="Contact" className="margin-top container">
+    <ContactContainer id="Contact" className="container">
       <div className="row">
         <h1 className="col-lg-12">Contact Me</h1>
       </div>
-      <h2 className={msgColor}>{response}</h2>
-      <form onSubmit={sendEmail} className="contact">
+
+      {response}
+
+      <ContactForm onSubmit={sendEmail} >
         <div className="form-group row">
           <label htmlFor="email" className="form-label">
             Email
@@ -88,7 +83,7 @@ export default function Contact() {
         <button type="submit" className="row btn btn-outline-light">
           Send Email
         </button>
-      </form>
-    </div>
+      </ContactForm>
+    </ContactContainer>
   );
 }
