@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
+import { ProjectContainer } from "./styles/project.styles";
 
 export default function Project(props) {
   const [showModal, setShowModal] = useState(false);
@@ -10,8 +11,8 @@ export default function Project(props) {
   }
 
   return (
-    <div className="card project">
-      <img src={props.img} alt="App Image" className="project-img" />
+    <ProjectContainer className="card">
+      <img src={props.img} alt="App Image" />
       <ProjectModal
         show={showModal}
         title={props.title}
@@ -25,6 +26,6 @@ export default function Project(props) {
       <button className="btn btn-outline-dark" onClick={handleModal}>
         See Project
       </button>
-    </div>
+    </ProjectContainer>
   );
 }
