@@ -4,6 +4,7 @@ import KeeperIMG from "../../assets/images/Keeper.png";
 import SecretIMG from "../../assets/images/Secret.png";
 import BlogIMG from "../../assets/images/Blog.png";
 import TindogIMG from "../../assets/images/Tindog.png";
+import "./project.css";
 
 export default function Projects() {
   return (
