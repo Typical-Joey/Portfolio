@@ -1,9 +1,9 @@
 import React from "react";
 import Project from "./Project";
-import KeeperIMG from "./images/Keeper.png";
-import SecretIMG from "./images/Secret.png";
-import BlogIMG from "./images/Blog.png";
-import TindogIMG from "./images/Tindog.png";
+import KeeperIMG from "../images/Keeper.png";
+import SecretIMG from "../images/Secret.png";
+import BlogIMG from "../images/Blog.png";
+import TindogIMG from "../images/Tindog.png";
 
 export default function Projects() {
   return (
