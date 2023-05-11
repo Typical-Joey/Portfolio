@@ -25,9 +25,14 @@ export default function ProjectModal({
           <h6>Project:</h6>
           <h1>{title}</h1>
           <h6>About:</h6>
-          <textarea readOnly="true" cols="24" rows="10" wrap="hard">
-            {info}
-          </textarea>
+
+          <textarea
+            value={info}
+            readOnly={true}
+            cols="24"
+            rows="10"
+            wrap="hard"
+          />
 
           <div className="modal-buttons">
             <a className="btn btn-outline-dark" href={code}>

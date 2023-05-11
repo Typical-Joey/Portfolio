@@ -16,7 +16,8 @@ export const DemoInactive = function () {
   return (
     <>
       <a className="btn btn-outline-dark demo-inactive" href>
-        <VisibilityOffIcon /> Sorry
+        <VisibilityOffIcon />
+        Sorry
       </a>
     </>
   );
