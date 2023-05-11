@@ -1,26 +1,23 @@
-import React from 'react';
+import React from "react";
 import VisibilityIcon from "@material-ui/icons/Visibility";
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 
-
-
-export const DemoActive = function (props) {
+export const DemoActive = function ({ url }) {
   return (
     <>
-      <a className="btn btn-outline-dark" href={props.url}>
+      <a className="btn btn-outline-dark" href={url}>
         <VisibilityIcon /> Demo
       </a>
     </>
-  )
-}
+  );
+};
 
-
-export const DemoInactive = function (props) {
+export const DemoInactive = function () {
   return (
     <>
       <a className="btn btn-outline-dark demo-inactive" href>
-        <VisibilityOffIcon /> Sorry 
+        <VisibilityOffIcon /> Sorry
       </a>
     </>
-  )
-}
+  );
+};

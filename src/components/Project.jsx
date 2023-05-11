@@ -2,27 +2,27 @@
 import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
-export default function Project(props) {
+export default function Project({ img, title, body, info, code, url }) {
   const [showModal, setShowModal] = useState(false);
 
-  function handleModal() {
+  function toggleModal() {
     setShowModal(!showModal);
   }
 
   return (
     <div className="card project">
-      <img src={props.img} alt="App Image" className="project-img" />
+      <img src={img} alt="App Image" className="project-img" />
       <ProjectModal
         show={showModal}
-        title={props.title}
-        body={props.body}
-        hide={handleModal}
-        info={props.info}
-        img={props.img}
-        code={props.code}
-        url={props.url}
+        title={title}
+        body={body}
+        hide={toggleModal}
+        info={info}
+        img={img}
+        code={code}
+        url={url}
       />
-      <button className="btn btn-outline-dark" onClick={handleModal}>
+      <button className="btn btn-outline-dark" onClick={toggleModal}>
         See Project
       </button>
     </div>
