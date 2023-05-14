@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
-require("dotenv").config();
+import { sendEmail } from "../../service/EmailService";
 
 export default function Contact() {
   const [response, setResponse] = useState();
@@ -14,30 +13,18 @@ export default function Contact() {
     setMsgColor(color);
   }
 
-  function sendEmail(e) {
+  function handleEmailResponse(e) {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        e.target,
-        process.env.REACT_APP_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          handleResponse("Email Sent!");
-          handleColor("success");
-        },
-        (error) => {
-          console.log(error.text);
-          handleResponse(
-            "Sorry! Looks like something went wrong. Please try again."
-          );
-          handleColor("error");
-        }
+    const isSuccessful = sendEmail(e.target);
+    if (isSuccessful) {
+      handleResponse("Email Sent!");
+      handleColor("success");
+    } else {
+      handleResponse(
+        "Sorry! Looks like something went wrong. Please try again."
       );
+      handleColor("error");
+    }
     e.target.reset();
   }
 
@@ -47,7 +34,7 @@ export default function Contact() {
         <h1 className="col-lg-12">Contact Me</h1>
       </div>
       <h2 className={msgColor}>{response}</h2>
-      <form onSubmit={sendEmail} className="contact">
+      <form onSubmit={handleEmailResponse} className="contact">
         <div className="form-group row">
           <label htmlFor="email" className="form-label">
             Email
