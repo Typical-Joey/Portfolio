@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
@@ -11,7 +10,7 @@ export default function Project({ img, title, body, info, code, url }) {
 
   return (
     <div className="card project">
-      <img src={img} alt="App Image" className="project-img" />
+      <img src={img} alt={`${title}`} className="project-img" />
       <ProjectModal
         show={showModal}
         title={title}
